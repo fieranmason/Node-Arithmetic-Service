@@ -5,6 +5,7 @@ exports.root = function(req, res) {
 }
 
 function getOperands(req) {
+  /*dealing with incoming floats is hard so I truncate for now*/
   var a = parseInt(req.body.a, 10);//use base ten
   var b = parseInt(req.body.b, 10);//use base ten
 
